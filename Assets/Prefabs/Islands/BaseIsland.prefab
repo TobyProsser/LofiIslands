@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2060985016732155513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2060985016732155510}
+  - component: {fileID: 2060985016732155508}
+  - component: {fileID: 2060985016732155511}
+  - component: {fileID: 2060985016732155509}
+  m_Layer: 0
+  m_Name: BaseIsland
+  m_TagString: Island
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2060985016732155510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060985016732155513}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.5, y: 0, z: 3.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2060985016732155508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060985016732155513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4481ee1ade40f41914e93fb261e170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chest: {fileID: 8691736883019155536, guid: 67f8567781855a64e83606d86a9c745a, type: 3}
+  testCube: {fileID: 3695730861961206996, guid: 721afeeb11e72274388cb466b084e59f,
+    type: 3}
+  spawnBuildings: 0
+  buildingsAmount: 1
+  building: {fileID: 2684915153215059000, guid: 1d2eb49e90fbab3439c39e0d2d8b6039,
+    type: 3}
+  tree: {fileID: 2393441589295556178, guid: d218b8527e27fec4388a9780ad85c552, type: 3}
+  treesAmount: 50
+  grass: {fileID: 2573263270231726908, guid: 0ab4e98fe5c5815499a2a597bebf6cd4, type: 3}
+  tallGrass: {fileID: 3743985778773397424, guid: 1041840a0906d5d4e96cb1c37936fd14,
+    type: 3}
+  spawnedEmptyBuildings: []
+  spawnBuildingList: []
+  gridSquare: {fileID: 4546555498938886900, guid: ba341319c1afe425b9f7e8b37e290436,
+    type: 3}
+--- !u!114 &2060985016732155511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060985016732155513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 720e59f00cc593c4e8e36d10b37b818c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cube: {fileID: 7040410732187489995, guid: 795a0915e0a83794994f7b066cfd111b, type: 3}
+  dock: {fileID: 4069593646455370590, guid: 290417000d76f4d4786114eca412a4bc, type: 3}
+  ladder: {fileID: 3087675256514539608, guid: 3d30dd6c6d82f954ea6698b1accb3801, type: 3}
+  material: {fileID: 2100000, guid: d9412472b5060224e8e243055aacd881, type: 2}
+  grassColors:
+  - {r: 0.14901961, g: 0.74509805, b: 0.9960785, a: 1}
+  - {r: 0.15686275, g: 0.6784314, b: 0.8980393, a: 1}
+  - {r: 0.20000002, g: 0.72156864, b: 0.9450981, a: 1}
+  stoneColors:
+  - {r: 0.7176471, g: 0.48235297, b: 0.79215693, a: 1}
+  - {r: 0.7328637, g: 0.4452207, b: 0.8207547, a: 1}
+  storeIsland: 0
+  hollowIsland: 1
+  simpleIslands: 1
+  height: 20
+  seperateColors: 1
+  stoneSides: 0
+  stoneMeshCollider: 0
+  size: 35
+  amp: 60
+  freq: 10
+  groundAmp: 3
+  offset: {x: 0, y: 0}
+  groundLevels: 3
+  spawnPoints: []
+  navSurface: {fileID: 0}
+--- !u!114 &2060985016732155509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060985016732155513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcba0597e665a5840bde36f38ac2f263, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  islandNumber: -1
+  offsetX: 0
+  offsetY: 0
+  notFirstload: 0
+  treeLocations: []
+  plantsOnIsland: []
+  buildingsOnIsland: []
